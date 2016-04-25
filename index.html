@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="adr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
+    <div class="container" ng-controller="SearchCtrl">
       <div class="jumbotron">
         <div class="alert alert-danger">
           <h3>Estrutura básica para criação de aplicações web</h3>
@@ -28,7 +28,7 @@
               Entre na raiz da aplicação e digite: npm install</p>
               <p>
             <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
-              Em seguida digite: gulp</p>
+              Em seguida digite: gulp</p> {{teste}}
         </div>
       </div>
     </div>

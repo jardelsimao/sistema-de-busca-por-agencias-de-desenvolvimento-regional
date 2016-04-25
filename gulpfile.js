@@ -10,9 +10,12 @@ var css = [
 // Todos os arquivos JS que serão compactados
 // Explicação: /*.js busca todos os arquivos css de uma pasta, /**/*.js busca todos os arquivos js de uma pasta e sub pasta.
 var js  = [
-    './js-source/vendor/jquery/*.js',        // Todos os arquivos do diretório Jquery
-    './js-source/vendor/bootstrap/*.js',    // Todos os arquivos do diretório bootstrap e sub diretórios
-    './js-source/main.js'                  // Arquivo único
+    './js-source/vendor/jquery/*.js',    
+    './js-source/vendor/angular/*.js',
+    './js-source/vendor/bootstrap/*.js', 
+    './js-source/main.js',
+    './js-source/directives/*.js',
+    './js-source/controller/*.js'
 ];
  
 // Núcleo do Gulp
@@ -56,7 +59,7 @@ gulp.task('minify-css', function(){
 gulp.task('minify-js', function () {
     gulp.src(js)                        // Arquivos que serão carregados, veja variável 'js' no início
     .pipe(concat('script.min.js'))      // Arquivo único de saída
-    .pipe(uglify())                     // Transforma para formato ilegível
+    .pipe(uglify({mangle: false}))                     // Transforma para formato ilegível
     .pipe(gulp.dest('./js/'))
     .pipe(notify({message: "JS tasks complete"}));
 });
