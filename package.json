@@ -1,0 +1,16 @@
+{
+  "name": "AutomatizaSES",
+  "version": "1.0.2",
+  "description": "Automatizador para criação de sistemas web",
+  "author": "<jardelsimao@gmail.com>",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-notify": "^2.2.0",
+    "gulp-strip-css-comments": "^1.2.0",
+    "gulp-uglify": "*",
+    "gulp-watch": "^4.3.5"
+  }
+}
