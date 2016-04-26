@@ -15,40 +15,28 @@
     <div class="container" ng-controller="SearchCtrl">
       <div class="jumbotron">
         <div class="well">
-        <h5>Pesquisar ADR da cidade</h5>
-              <div angucomplete-alt id="ex16"
-                 placeholder="Search cidades"
-                 maxlength="50"
-                 pause="100"
-                 selected-object="selectedCountry16"
-                 local-data="cidades"
-                 search-fields="nome"
-                 title-field="nome"
-                 minlength="1"
-                 input-class="form-control form-control-small"
-                 match-class="highlight">
-              </div>
-        </div>
-        <div class="well">
-
-        <div class="result">
-          <div ng-show="selectedCountry16">
-           <span ng-show="selectedCountry16.originalObject.codigo">Código da ADR: <span class="bold-span">{{selectedCountry16.originalObject.codigo}}</span></span>
-            <span ng-show="selectedCountry16.originalObject.adr"> - <span class="bold-span">{{selectedCountry16.originalObject.adr}}</span></span>
+          <h5>Pesquisar ADR da cidade</h5>
+          <div 
+              angucomplete-alt id="ex16"
+              placeholder="Search cidades"
+              maxlength="50"
+              pause="100"
+              selected-object="selectedCountry16"
+              local-data="cidades"
+              search-fields="nome"
+              title-field="nome"
+              minlength="1"
+              input-class="form-control form-control-small"
+              match-class="highlight">
           </div>
         </div>
-          <!-- <form>
-              <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control" ng-model="cadastrarCidade.nome" id="nome">
-              </div>
-              <div class="form-group">
-                <label for="codigo_adr">Código ADR</label>
-                <input type="text" class="form-control" ng-model="cadastrarCidade.codigo_adr" id="codigo_adr">
-              </div>
-              <button type="submit" class="btn btn-primary" ng-click="cadastrarCidades()" name="action">Cadastrar</button>
-              <button type="reset" class="btn btn-default" name="action">Limpar</button>
-          </form> -->
+        <div class="well">
+          <div class="result">
+            <div ng-show="selectedCountry16">
+             <span ng-show="selectedCountry16.originalObject.codigo">Código da ADR: <span class="bold-span">{{selectedCountry16.originalObject.codigo}}</span></span>
+              <span ng-show="selectedCountry16.originalObject.adr"> - <span class="bold-span">{{selectedCountry16.originalObject.adr}}</span></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
