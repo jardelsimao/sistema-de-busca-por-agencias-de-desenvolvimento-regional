@@ -1,1 +1,1 @@
-var app = angular.module("adr", ["angucomplete"]);
+var app = angular.module("adr", ["angucomplete-alt"]);

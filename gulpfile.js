@@ -4,6 +4,7 @@
 // Explicação: /*.css busca todos os arquivos css de uma pasta, /**/*.css busca todos os arquivos css de uma pasta e sub pasta.
 var css = [
  './css-source/vendor/bootstrap/*.css',
+ './css-source/vendor/Angu/*.css',
  './css-source/style.css'
 ];
  
@@ -12,9 +13,9 @@ var css = [
 var js  = [
     './js-source/vendor/jquery/*.js',    
     './js-source/vendor/angular/*.js',
+    './js-source/vendor/Angu/*.js',
     './js-source/vendor/bootstrap/*.js', 
     './js-source/main.js',
-    './js-source/directives/*.js',
     './js-source/controller/*.js'
 ];
  

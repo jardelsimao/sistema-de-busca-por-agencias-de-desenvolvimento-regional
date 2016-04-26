@@ -1,6 +1,62 @@
-app.controller("SearchCtrl", function($scope){
+app.controller("SearchCtrl", function($scope, $http){
 
-	$scope.teste = "oi oi";
-	console.log($scope.teste);
+	$scope.cidades = [
+      	{nome: 'Bandeirante', codigo: '01', adr: 'São Miguel do Oeste'},
+      	{nome: 'Barra Bonita', codigo: '01', adr: 'São Miguel do Oeste'},
+      	{nome: 'Belmonte', codigo: '01', adr: 'São Miguel do Oeste'},
+      	{nome: 'Descanso', codigo: '01', adr: 'São Miguel do Oeste'},
+      	{nome: 'Guaraciaba', codigo: '01', adr: 'São Miguel do Oeste'},
+      	{nome: 'Paraíso ', codigo: '01', adr: 'São Miguel do Oeste'},
+      	{nome: 'São Miguel do Oeste ', codigo: '01', adr: 'São Miguel do Oeste'},
+      	{nome: 'Bom Jesus do Oeste ', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Flor do Sertão', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Iraceminha', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Maravilha', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Modelo', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Pinhalzinho', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Romelândia', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Santa Terezinha do Progresso', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Saltinho', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'São Miguel da Boa Vista', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Saudades', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Serra Alta', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Sul Brasil', codigo: '02', adr: 'Maravilha'},
+      	{nome: 'Campo Erê', codigo: '03', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Coronel Martins', codigo: '03', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Galvão', codigo: '03', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Novo Horizonte', codigo: '03', adr: 'São Lourenço do Oeste'},
+      	{nome: 'São Bernardino', codigo: '03', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Jupiá', codigo: '03', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Águas Frias', codigo: '04', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Caxambu do Sul', codigo: '04', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Chapecó', codigo: '04', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Cordilheira Alta', codigo: '04', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Coronel Freitas', codigo: '04', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Guatambu', codigo: '04', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Nova Erechim', codigo: '04', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Nova Itaberaba', codigo: '04', adr: 'São Lourenço do Oeste'},
+      	{nome: 'Abelardo Luz', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Bom Jesus', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Entre Rios', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Faxinal do Guedes', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Ipuaçu', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Lajeado Grande', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Marema', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Ouro Verde', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Passos Maia', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Ponte Serrada', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'São Domingos', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Vargeão', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Xanxerê', codigo: '05', adr: 'Xanxerê'},
+      	{nome: 'Alto Bela Vista', codigo: '06', adr: 'Concórdia'},
+      	{nome: 'Concórdia', codigo: '06', adr: 'Concórdia'},
+      	{nome: 'Ipira', codigo: '06', adr: 'Concórdia'},
+      	{nome: 'Irani', codigo: '06', adr: 'Concórdia'},
+      	{nome: 'Peritiba', codigo: '06', adr: 'Concórdia'},
+      	{nome: 'Piratuba ', codigo: '06', adr: 'Concórdia'},
+      	{nome: 'Presidente Castelo Branco', codigo: '06', adr: 'Concórdia'},
 
-})
+
+
+    ];
+});

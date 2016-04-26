@@ -12,5 +12,8 @@
     "gulp-strip-css-comments": "^1.2.0",
     "gulp-uglify": "*",
     "gulp-watch": "^4.3.5"
+  },
+  "dependencies": {
+    "angucomplete-alt": "^2.4.1"
   }
 }
