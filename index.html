@@ -13,15 +13,15 @@
   </head>
   <body>
     <div class="container" ng-controller="SearchCtrl">
-      <div class="jumbotron">
+      <div class="jumbotron col-md-6 ">
         <div class="well">
-          <h5>Pesquisar ADR da cidade</h5>
+          <h5>Pesquisa por município de Santa Catarina</h5>
           <div 
               angucomplete-alt id="ex16"
-              placeholder="Search cidades"
+              placeholder="Pesquisa cidades"
               maxlength="50"
               pause="100"
-              selected-object="selectedCountry16"
+              selected-object="selectedCidade"
               local-data="cidades"
               search-fields="nome"
               title-field="nome"
@@ -32,9 +32,9 @@
         </div>
         <div class="well">
           <div class="result">
-            <div ng-show="selectedCountry16">
-             <span ng-show="selectedCountry16.originalObject.codigo">Código da ADR: <span class="bold-span">{{selectedCountry16.originalObject.codigo}}</span></span>
-              <span ng-show="selectedCountry16.originalObject.adr"> - <span class="bold-span">{{selectedCountry16.originalObject.adr}}</span></span>
+            <div ng-show="selectedCidade">
+             <span ng-show="selectedCidade.originalObject.codigo">ADR: <span class="bold-span">{{selectedCidade.originalObject.codigo}}</span></span>
+              <span ng-show="selectedCidade.originalObject.adr"> - <span class="bold-span">{{selectedCidade.originalObject.adr}}</span></span>
             </div>
           </div>
         </div>
